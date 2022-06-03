@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>3D Reaction Time</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="blocker">
+			<div id="instructions">
+				<div class="main">
+					<h1 id="playButton">Click to play</h1>
+                    <h2>Controls</h2>
+					<div>
+                        <p class="alignLeft">Move:</p> <p class="alignRight">W, A, S, D</p><br/>
+                        <p class="alignLeft">Select:</p> <p class="alignRight">Left MB</p><br/>
+                        <p class="alignLeft">Start:</p> <p class="alignRight">Space</p><br/>
+					    <p class="alignLeft">Look:</p> <p class="alignRight">Mouse</p>
+                    </div>
+				</div>
+                <div class="second">
+                    <h2>How to Play</h2>
+                    <ol>
+                        <li>Press Space to Start</li>
+                        <li>Select the green Ball</li>
+                        <li>Repeat</li>
+                    </ol>
+                </div>
+			</div>
+		</div>
+
+        <div id="HUD">
+            <div class="active">
+                <h1>Active Time</h1>
+                <p id="activeTimeHUD">00m 00s 000ms</p>  
+            </div> 
+            <div class="highscore">
+                <h1>Highscore</h1>
+                <p id="highscoreTimeHUD">00m 00s 000ms</p>  
+            </div>
+            <div class="crossHair">
+                <div class="top"></div>
+                <div class="left"></div>
+                <div class="bottom"></div>
+                <div class="right"></div>
+            </div>
+            <div class="count">
+                <h1 id="HUDCount">0/0</h1>
+            </div>
+            <div class="responseContainer">
+                <h1 id="HUDResponse"></h1>
+            </div>
+        </div>
+
+		<script type="module" src="app/main.js"></script>
+	</body>
+</html>
